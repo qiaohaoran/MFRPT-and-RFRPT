@@ -5,7 +5,7 @@ fairseq-train data \
     --arch multilingual_transformer_iwslt_de_en \
     --share-encoders \
     --share-encoder-embeddings \
-    --optimizer adam --adam-betas '(0.954, 0.98)' \
+    --optimizer adam --adam-betas '(0.997, 0.98)' \
     --lr 0.001 --lr-scheduler inverse_sqrt \
     --warmup-updates 2000 --warmup-init-lr '1e-05' \
     --label-smoothing 0.0 --criterion label_smoothed_cross_entropy \

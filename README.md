@@ -1,6 +1,6 @@
 # README
 
-> this script is …..
+> Transformer-based Multi-task Learning for Predicting Distinct Reactions under Low-resource Circumstance.
 > 
 
 # Requirements
@@ -34,8 +34,8 @@ python -c 'import torch;print(torch.cuda.is_available())’
 <aside>
 💡 if return 
 True that means you can train model with GPU accelerate
-False that means your cuda module is not available
-No module named 'torch’ that means your pytorch have not been installed succeed
+,False that means your cuda module is not available
+,No module named 'torch’ that means your pytorch have not been installed succeed
 
 </aside>
 

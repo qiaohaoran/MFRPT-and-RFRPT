@@ -19,7 +19,7 @@ pip install tensorboardX # torch visualization support
 git clone $thispath
 
 <aside>
-💡 python -c "import fairseq;print(fairseq.__**file__**)" #get your fairseq path eg. /XXX/…./fairseq-main/fairseq/
+💡 python -c "import fairseq;print(fairseq.__file__)" #get your fairseq path eg. /XXX/…./fairseq-main/fairseq/
 
 </aside>
 

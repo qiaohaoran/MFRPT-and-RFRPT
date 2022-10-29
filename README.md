@@ -59,7 +59,7 @@ bash generate_RFRPT_heck.sh # run this you can get a 'result' file with txt
 
 mkdir -p raw_data/concat
 
-cat raw_data/lang*/* > raw_data/concat/en.src
+cat raw_data/lang*/* > raw_data/concat/en.src ;
 cat raw_data/lang*/* > raw_data/concat/en.tgt
 
 bash makedata_MFRPT.sh

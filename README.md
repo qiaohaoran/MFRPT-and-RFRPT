@@ -44,8 +44,8 @@ True that means you can train model with GPU accelerate
 #first we should make dict for model, so we
 mkdir -p raw_data/concat
 
-cat raw_data/lang-bv/* > raw_data/concat/en.src ;
-cat raw_data/lang-bv/* > raw_data/concat/en.tgt  # we just use this file to make a dict
+cat raw_data/lang-heck/* > raw_data/concat/en.src ;
+cat raw_data/lang-heck/* > raw_data/concat/en.tgt  # we just use this file to make a dict
 
 bash makedata_RFRPT_heck.sh #before this step pls make sure no filename 'data' and 'concat' in curring path
 

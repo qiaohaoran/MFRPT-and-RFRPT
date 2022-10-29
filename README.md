@@ -45,19 +45,27 @@ True that means you can train model with GPU accelerate
 mkdir -p raw_data/concat
 
 cat raw_data/lang-bv/* > raw_data/concat/en.src
-cat raw_data/lang-bv/* > raw_data/concat/en.tgt  # the name en.src or en.tgt it dosen't mean anything
+cat raw_data/lang-bv/* > raw_data/concat/en.tgt  # we just use this file to make a dict
 
-bash makedata_RXRPT_heck.sh #before this step pls make sure no filename 'data' and 'concat' in curring path
+bash makedata_RFRPT_heck.sh #before this step pls make sure no filename 'data' and 'concat' in curring path
 
-bash run_RXRPT_heck.sh 
+bash run_RFRPT_heck.sh 
 #during the train ,you can run `tensorboard --logdir ./tf_log` to watch model training (pip install tensorboardX)
 
-bash generate_RXRPT_heck.sh # run this you can get a 'result' file with txt 
+bash generate_RFRPT_heck.sh # run this you can get a 'result' file with txt 
 
 
 #The following steps implement the results on MFRPT
 
 mkdir -p raw_data/concat
 
-cat raw_data/lang-bv
+cat raw_data/lang*/* > raw_data/concat/en.src
+cat raw_data/lang*/* > raw_data/concat/en.tgt
+
+bash makedata_MFRPT.sh
+
+bash run_MFRPT.sh
+
+bash generate_MFRPT.sh
+
 
